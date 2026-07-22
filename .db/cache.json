@@ -1,7 +1,13 @@
 {
   "4kyu": [],
   "5kyu": [],
-  "6kyu": [],
-  "7kyu": [],
-  "8kyu": []
+  "6kyu": [
+    "prefill-an-array"
+  ],
+  "7kyu": [
+    "alternate-capitalization"
+  ],
+  "8kyu": [
+    "palindrome-strings"
+  ]
 }
