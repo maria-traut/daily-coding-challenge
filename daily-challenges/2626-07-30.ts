@@ -9,7 +9,13 @@ Note: keep the original order of the names in the output.
 import { test } from "@/test.ts";
 
 function friend(friends: string[]): string[] {
-  // your code here
+  let friendsWith4Letters: string[] = [];
+  for (const friend of friends) {
+    if (friend.length === 4) {
+      friendsWith4Letters.push(friend);
+    }
+  }
+  return friendsWith4Letters;
 }
 
 test(friend(["Ryan", "Kieran", "Jason", "Yous"]), ["Ryan", "Yous"]);

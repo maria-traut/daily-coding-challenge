@@ -7,7 +7,22 @@ only letters and spaces. Spaces will be included only when more than one word is
 import { test } from "@/test.ts";
 
 function spinWords(s: string): string {
-  // your code here
+  const resultArray: string[] = [];
+  const splitString: string[] = s.split(" ");
+
+  for (const word of splitString) {
+    if (word.length < 5) {
+      resultArray.push(word);
+    }
+
+    if (word.length >= 5) {
+      const reversedWord = word.split("").reverse().join("");
+      resultArray.push(reversedWord);
+    }
+  }
+
+  const result: string = resultArray.join(" ");
+  return result;
 }
 
 test(spinWords("Welcome"), "emocleW");
